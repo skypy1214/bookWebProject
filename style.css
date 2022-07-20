@@ -158,12 +158,95 @@ body{
     width: 150px;
     text-align: left;
 }
-
-.newBook{
-    border: 1px solid blue;
+/* 수근 */
+.newBook {
     width: 100%;
-    height: 800px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    background-color: rgb(76, 144, 204);
 }
+li {
+    list-style: none;
+}
+.newBook_title {
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #ccc;
+}
+.newBook_title:hover {
+    color: rgba(0, 0, 0, 0.571);
+}
+.newBook_slide_wrapper {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    height: 500px;
+    margin: 50px auto;
+}
+.newBook_slides {
+    position: relative;
+    left: 0; top: 0;
+
+}
+.newBook_slides.animated {
+    transition: 0.5s ease-out;
+
+}
+.newBook_slides li{
+    width: 250px;
+    height: 500px;
+    float: left;
+}
+.newBook_slides li:not(:last-child) {
+    margin-right: 30px;
+}
+.newBook_slides li .img_box {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.newBook_slides li .img_box > span {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.newBook_slides li img {
+    width: 150px;
+}
+.newBook_slides li img:hover {
+    width: 200px;
+}
+.newBook_controls span {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color:  rgb(76, 144, 204);;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.newBook_controls span:hover {
+    background-color: rgb(98, 96, 96);
+    transition: ease-out 0.35s;
+}
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+/* 수근 끝 */
 .genreBook{
     border: 1px solid black;
     width: 100%;
