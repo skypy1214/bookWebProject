@@ -169,11 +169,114 @@ body{
     width: 100%;
     height: 800px;
 }
+/* -----------------양희 시작-------------------------- */
 .reviewBook{
-    /* border: 1px solid green; */
+    border: 1px solid green;
+    background-color: white;
     width: 100%;
     height: 800px;
 }
+.reviewtitle{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: #1E90FF;
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+.reviewtitle::before{
+    content: "";
+    flex-grow: 1;
+    margin: 0 16px;
+    background: #1E90FF;
+    height: 2px;
+}
+.reviewtitle::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0 16px;
+    background: #1E90FF;
+    height: 2px;
+}
+.reviewcarousel{
+    border: 1px solid red;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.reviewboxs{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.reviewboxs.animated{
+    transition: .5s ease-out;
+}
+.reviewbox{
+    width: 20%;
+    height: 85%;
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px gray;
+}
+.reviewbox:hover .topimg img{
+    opacity: 0.5;
+}
+.reviewbox .topimg{
+    width: 100%;
+    height: 80%;
+}
+.topimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: .3s;
+    cursor: pointer;
+}
+.bottomtext{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottomtext i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bottomtext span{
+    font-weight: bold;
+    color: #333;
+}
+.lefttext{
+    margin-left: 10px;
+}
+
+.righttext{
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.righttext .uil-heart{
+    color: red;
+}
+#arrowleft{
+    font-size: 2rem;
+    cursor: pointer;
+}
+#arrowright{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* -------------------양희 끝------------------------------ */
 
 
 .footer{
