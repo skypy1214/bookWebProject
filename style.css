@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    /* background-color: rgb(64, 135, 201); */
+    height: 400vh;
+    z-index: 1;
+}
+
+.header{
+    border: 1px solid pink;
+    width: 100%;
+    height: 300px;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerTop .logoFrame {
+    display: flex;
+    justify-content: center;
+}
+
+.headerTop .loginIcon{
+    display: flex;
+    text-align: right;
+    /* background-color: red; */
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.loginModal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.loginModal .fa-xmark{
+    font-size: 2rem;
+    transform: translate(230px,10px);
+    opacity: 0.4;
+}
+
+.loginModal .lgModal{
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginModal .modalTitle{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding: 20px;
+    /* background-color: brown; */
+}
+
+.loginModal .inputBox{
+    width: 80%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.inputBox .fa-user, .inputBox .fa-lock{
+    font-size: 2rem;
+    transform: translate(0,5px);
+}
+
+.inputBox input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.userName, .passwd{
+    transform: translate(0,-20px);
+    margin: 10px;
+}
+
+.inputBox #modalBtn{
+    width: 85%;
+    padding: 5px;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    background-color: rgb(64, 135, 201);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#signUp{
+    margin-top: 15px;
+    font-size: 1.2rem;
+
+}
+
+#signUp a{
+    padding: 5px;
+    color: rgb(21, 89, 153);
+    text-decoration: none;
+}
+
+#signUp a:hover{
+    font-weight: bold;
+}
+
+
+.modalCheckBox .check{
+    margin: 10px 60px;
+    text-align: center;
+    display: inline-block;
+}
+
+.loginIcon .fa-user{
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+#logo{
+    width: 150px;
+    text-align: left;
+}
+
+.newBook{
+    border: 1px solid blue;
+    width: 100%;
+    height: 800px;
+}
+.genreBook{
+    border: 1px solid black;
+    width: 100%;
+    height: 800px;
+}
+.reviewBook{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 800px;
+}
+
+
+.footer{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    width: 100%;
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(15, 15, 155, 0.377);
+}
+
+.footer .icons .iconFrame{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30, 83, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.iconFrame .ficon {
+    font-size: 1.5rem;
+    filter: invert();
+}
+.footerScroll{
+    /* background-color: red; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerScroll ul li{
+    display: inline-block;
+    margin: 10px;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.loadingImg{
+    background-color: rgb(175, 215, 233);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.loadingImg.fadeOut{
+    display: none;
+}
