@@ -331,3 +331,165 @@ body{
     height: 150px;
 }
 /* 백진주 영역 끝--------------------------------------------------- */
+
+/* //////이상호 */
+.nav{
+    /* 네비바 영역 시작 */
+    border: 1px solid black;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.nav-bar-fixed{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 79.8%;
+    border: 1px solid black;
+}
+
+.nav-bar > span{
+    padding: 20px;
+}
+.nav-bar-fixed > span{
+    padding: 20px;
+}
+.nav-bar-dropdown{
+    /* 네비바 드롭다운  */
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%; 
+    z-index: 100;
+}
+.nav-bar-dropdown > div{
+    /* 드롭다운 이미지 정렬 */
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-dropdown > div> a > img{ 
+    width: 120px;
+}
+.nav-bar-dropdown > div > a > span{
+    color: white;
+    position: relative;
+    right: 120px;
+    bottom: 160px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.nav-bar > span:first-child:hover ~ .nav-bar-dropdown{
+    /* 드롭다운 호버 */
+    display: flex;
+}
+
+.nav-bar-modal{
+    /* 헤더 하단 가려주는 것 */
+    position: absolute;
+    width: 100%;
+    top: 265px;
+    height: 55px;
+    background-color: rgba(153,153,153, 0.5);
+    display: none;
+
+}
+.nav-bar > span:first-child:hover ~ .nav-bar-modal{
+    /* 헤더 가려주는 배경 호버 */
+    display: block;
+
+}
+.bestSeller{
+    /* 베스트셀러 시작 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+
+}
+.bestSeller-sell, .bestSeller-book{
+    margin: 0 25px;
+}
+.bestSeller > i{
+    /* 아이콘 사이즈 조절 */
+    font-size: 2.4rem;
+    cursor: pointer;
+
+}
+.bestSeller-sell{
+    /* 베스트셀러 큰 이미지 캐러셀 */
+    border: 1px solid black;
+    width: 60%;
+    height: 250px;
+  
+}
+.bestSeller-sell-warp{
+    /* 캐러셀 오버플로우 히든 */
+    overflow: hidden;
+}
+.bestSeller-sell-move{
+    /* 캐러셀 움직이는 디브 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+
+
+
+.bestSeller-book{
+    /* 베스트셀러 작은이미지 */
+    width: 14%;
+    height: 220px;
+    padding-top: 15px;
+  
+}
+.bestSeller-book > div > img{
+    width: 100%;
+
+}
+
+.bestSeller-book-modal{
+    /* 작은이미지 모달 */
+    width: 11.3%;
+    height: 220px;
+    position: absolute;
+    border: 1px solid black;
+    top: 98px;
+    background-color: rgba(153,153,153, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.bestSeller-book-modal > p{
+    font-size: 1.5rem;
+}
+
+.bestSeller-book > div:hover ~ .bestSeller-book-modal{
+    /* 베스트셀러 작은이미지 모달 호버 */
+    display: flex;
+}
+
+
+.bestSeller-book > div:nth-child(2) > img
+,.bestSeller-book > div:nth-child(3) > img{
+    /* 책 이미지 캐러셀 준비 */
+    display: none;
+}
+
+/* /////////////이상호/////////// */
+
